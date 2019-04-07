@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e
+set -ex
 
 DISTRIB_NAME=`lsb_release -is`
 DISTRIB_CODENAME=`lsb_release -cs`

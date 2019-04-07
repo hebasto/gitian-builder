@@ -2,7 +2,7 @@
 
 # Get an installed package manifest
 
-set -e
+set -ex
 
 cd /var/cache/apt/archives
 
