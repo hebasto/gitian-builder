@@ -15,7 +15,9 @@ IFS=.
 VERSION=($(lxc-start --version))
 IFS=$OLD_IFS
 
-if [ $VERSION -ge 3 ]; then
+if [ $VERSION -ge 4 ]; then
+    LXC_CONFIG=etc/lxc.4.config.in
+elif [ $VERSION -ge 3 ]; then
     LXC_CONFIG=etc/lxc.3.config.in
 else
     LXC_CONFIG=etc/lxc.config.in
